@@ -1,0 +1,366 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('webagency_images/fonts/fontawesome-webfont.eot');
+    src: url('webagency_images/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('webagency_images/fonts/fontawesome-webfont.woff') format('woff'),
+         url('webagency_images/fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('webagency_images/fonts/fontawesome-webfont.svg#fontwesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'fontawesome-webfont', Arial, Helvetica, sans-serif;    
+}
+
+/*nav*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 82px;
+    flex-wrap: wrap;
+}
+#logo {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;    
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+#menu li {
+    padding: 30px 10px;
+}
+#menu a {
+    text-decoration: none;
+}
+#menu li:hover {
+    border-top: 4px solid #3BAED7;
+    cursor: pointer;    
+}
+#menu a:hover {
+    color: black;    
+}
+
+/*header*/
+
+#slider {
+    width: 100%;
+    overflow: hidden;    
+    position: relative;
+}
+#slider figure {
+    width: 200%;
+    margin: 0;
+    position: relative;
+}
+#slider figure img {
+    float: left;
+    width: 50%;
+    height: auto;    
+}
+#conteneur-fleche {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#conteneur-fleche .fleche i {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    color: white;
+}
+#flechegauche i {
+    padding-right: 15px;
+    text-align: right;
+    position: relative;
+    right: 40px;
+}
+#flechedroite i {
+    padding-left: 15px;
+    text-align: left;
+    position: relative;
+    left: 40px;
+}
+#presentation {
+    width: 40%;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    color: white;    
+}
+#webagency {
+    color: #3BAED7;
+}
+#presentation h1 {
+    font-size: 30px;
+}
+#presentation p {
+    font-size: 16px;
+}
+#presentation p:last-child {
+    background-color: #3BAED7;
+    text-align: center;
+    padding: 10px;
+    width: 110px;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #1D8DB5;
+    cursor: pointer;
+}
+
+/*Sections*/
+#services, #projets {
+    padding: 50px 0;
+    min-height: 650px; 
+}
+section p, a, #adresse {
+    color: #63686D;
+}
+h2 {
+    font-size: 38px;
+}
+.intro {
+    text-align: center;
+}
+
+/*DĆ©coration*/
+.fa {
+    color: #3BAED7;
+}
+.fa-chevron-left, .fa-chevron-right {
+    color: white;
+}
+.fa-circle {
+    text-shadow: -5px 0 white, 0 5px white,
+      5px 0 white, 0 -5px white;
+}
+hr {
+    width: 130px;
+    opacity: 0.5;
+}
+.intro .fa-circle {
+    position: relative;
+    bottom: 18px;
+}
+.icon {
+    width: 80px;
+    height: 55px;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 25px;
+    border: 1px solid lightgrey;
+}
+
+/* Section : Nos services*/
+.intro p {
+    width: 50%;
+    margin: auto;
+}
+#detailsServices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px auto;  
+    width: 85%;    
+}
+#infos {
+    margin-top: 50px;
+}
+#infos .deco {
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+#detailsServices .fa-circle {
+    position: absolute;
+    top: 40%;
+    right: -6px;
+}
+.text {
+    max-width: 600px;
+}
+.text p {
+    margin-left: 100px;   
+    text-align: justify; 
+}
+
+/* Section : Nos projets*/
+#projets {
+    background-color: #F5F5F5;
+}
+#projets .intro ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0;    
+    width: auto;
+}
+#projets .intro li {
+    background-color: #E5E5E5;    
+    padding: 10px;
+    margin-left: 0;
+}
+#projets .intro li:hover {
+    background-color: #3BAED7;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 3px 0 #1D8DB5;
+    cursor: pointer;
+}
+#projets .intro li:hover > span {
+    width: 1px;
+    height: 1px;
+    border: 8px solid transparent;
+    border-top: 8px solid #1D8DB5;
+    position: relative;
+    top: 38px;
+    right: 30px;
+}
+#projets .intro li:first-child {
+    border-radius: 4px 0 0 4px;        
+}
+#projets .intro li:last-child {
+    border-radius: 0 4px 4px 0;        
+}
+#imagesProjets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+}
+#imagesProjets li {
+    list-style-type: none;
+    width: 250px;
+    padding: 20px;
+}
+#imagesProjets figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+#imagesProjets img {
+    width: 100%;
+}
+#imagesProjets img:hover + figcaption, #imagesProjets figcaption:hover {
+    visibility: visible;
+    cursor: pointer;
+}
+#imagesProjets figcaption {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    bottom: 4px;
+    visibility: hidden;
+}
+.legende {
+    font-size: 13px;
+}
+#imagesProjets strong {
+    font-size: 18px;
+}
+.fa-eye {
+    color: white;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #3BAED7;
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: 70px;    
+}
+
+/*Section : formulaire de contact*/
+/* Mise en forme du formulaire */
+
+    #carteEtFormulaire iframe{
+        position: absolute;
+        height: 100%;
+        min-height:1000px;
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    #carteEtFormulaire form{
+        position: relative;
+        background-color: #f2f6f8;
+        height:78%;
+	min-height: 780px;
+        width :25%;
+	min-width:300px;
+        margin:4% 0 0 65%;
+        opacity: 0.9;        
+    }
+
+        #carteEtFormulaire form p {
+            margin : 5% 5% 5% 5%;
+            height: 100%;
+            font-size: 20px;
+        }
+
+        #carteEtFormulaire form input{
+            width: 100%;
+            height: 5.5%;
+            border:1px solid #cccccc;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 20px; 
+        }
+
+        #carteEtFormulaire form textarea {
+            width: 100%;
+            height: 38%;
+            background-color: white;
+            font-size: 20px;
+        }
+
+        #carteEtFormulaire form button {
+            color:white;
+            font-size: 20px;
+            background-color: #5cadd3;
+            border-bottom:4px solid #4494bb;
+            border-radius: 3px;
+            width: 35%;
+            min-height: 6%;
+        }
+
+/* RESPONSIVE */
+@media screen and (max-width: 850px){
+
+    #carteEtFormulaire{
+        background-color:grey;
+    }
+   	
+    #carteEtFormulaire iframe{
+        display:none;
+        background-color:black;
+    }
+
+    #carteEtFormulaire form{
+        margin: 4% 0 0 0;
+        left:1%;
+   	}
+}
