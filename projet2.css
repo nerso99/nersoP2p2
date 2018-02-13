@@ -62,9 +62,9 @@ nav {
 	
 }
 #slider figure {
-    width: calc(1600px * 2);
+    width: calc(200%);
     margin: 0;
-    position: relative;
+  
 }
 #slider figure img {
     float: left;
@@ -368,7 +368,7 @@ textarea {
 	}
 	
 	50% {
-		transform: translateX(-1600px);  
+		transform: translateX(-100%);  
 	}
 	
 	
@@ -409,20 +409,13 @@ textarea {
 width: auto;
 	}
 	
-@media screen and (max-width: 850px){
+@media screen and (max-width: 650px){
 
-    #carteEtFormulaire{
-        background-color:grey;
-    }
-   	
-    #carteEtFormulaire iframe{
-        display:none;
-        background-color:black;
-    }
 
-    #carteEtFormulaire form{
-        margin: 4% 0 0 0;
-        width: auto;
+
+    #conteneur_contact form{
+        margin: auto;
+
 }
 
 /* CSS mobile ici */
